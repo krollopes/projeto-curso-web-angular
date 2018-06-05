@@ -19,10 +19,10 @@ export class ProductsService {
 
     this.carregando = true;
 
-      this.http.get('https://pagina-web-angular.firebaseio.com/productos_idx.json')
+      this.http.get('https://pagina-web-angular.firebaseio.com/products_idx.json')
           .subscribe( res => {
 
-            console.log(res.json());
+            // console.log(res.json());
 
             this.carregando = false;
             this.products = res.json();

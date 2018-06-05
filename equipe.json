@@ -1,19 +1,19 @@
 {
-  "equipo" : [ {
+  "equipe" : [ {
     "frase" : "Tente fazer pequenas conquistas todos os dias. Se você fizer assim, imagine o que você vai conseguir em um mês ... Um ano ... uma vida ...",
-    "nombre" : "Robert T. Williams",
+    "nome" : "Robert T. Williams",
     "subtitulo" : "Graphic Designer",
     "twitter" : "@robertwilliams",
     "url" : "https://firebasestorage.googleapis.com/v0/b/pagina-web-angular.appspot.com/o/team-1.jpg?alt=media&token=9cc3e3cd-8adc-43ab-8a80-44487836cc3e"
   }, {
     "frase" : "Quando a inspiração não me encontra, faço um meio caminho para encontrá-la.",
-    "nombre" : "Angelina B. Widow",
+    "nome" : "Angelina B. Widow",
     "subtitulo" : "Founder / CEO",
     "twitter" : "@angelinawidow",
     "url" : "https://firebasestorage.googleapis.com/v0/b/pagina-web-angular.appspot.com/o/team-2.jpg?alt=media&token=aa1a41b9-7dd3-44be-b75c-bf80f8cd9280"
   }, {
     "frase" : "Não há disposição mental a que o homem não possa aplicar a medicina oportuna apenas alcançando um livro de suas estantes de livros.",
-    "nombre" : "Patrick Anderson",
+    "nome" : "Patrick Anderson",
     "subtitulo" : "Art Director",
     "twitter" : "@patrickanderson",
     "url" : "https://firebasestorage.googleapis.com/v0/b/pagina-web-angular.appspot.com/o/team-3.jpg?alt=media&token=9ce6b865-ad88-4ed4-b56f-702b41d72f38"
