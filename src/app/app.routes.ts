@@ -4,7 +4,8 @@ import {
   AboutComponent,
   ContactComponent,
   PortfolioComponent,
-  ProductComponent
+  ProductComponent,
+  SearchComponent
 } from './components/index.paginas';
 
 const app_routes: Routes = [
@@ -12,6 +13,7 @@ const app_routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'product/:id', component: ProductComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'buscar/:termino', component: SearchComponent },
   { path: '**', pathMatch: 'full' , redirectTo: 'home' }
 ];
 
