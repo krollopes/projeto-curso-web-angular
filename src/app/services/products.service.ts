@@ -15,6 +15,10 @@ export class ProductsService {
 
   }
 
+  public carregar_product( cod: string ) {
+    return this.http.get(`https://pagina-web-angular.firebaseio.com/products/${cod}.json`);
+  }
+
   public carregar_products() {
 
     this.carregando = true;
