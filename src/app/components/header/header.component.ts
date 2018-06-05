@@ -13,7 +13,6 @@ export class HeaderComponent {
 
   buscar_product( termino: string) {
 
-    // console.log(termino);
     this.router.navigate(['buscar', termino])
   }
 
