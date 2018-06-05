@@ -29,7 +29,7 @@ export class InformationService {
   public carregar_quem_somos() {
     this.http.get('https://pagina-web-angular.firebaseio.com/equipe.json')
               .subscribe( data => {
-                console.log(data.json());
+                // console.log(data.json());
               this.quem_somos = true;
               this.equipe = data.json();
     });
