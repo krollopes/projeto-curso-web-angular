@@ -19,9 +19,30 @@ export class ProductsService {
     console.log('Buscando produto');
     console.log(this.products.length);
 
+    if( this.products.length === 0 ) {
+      this.carregar_products()
+          .then( () => {
+        // terminou de carregar
+          this.filtrar_products(termino);
+        });
+    } else {
+      this.filtrar_products(termino);
+    }
+  }
+
+  private filtrar_products(termino: string) {
+
+    this.products_filtrado = [];
+
+    termino = termino.toLowerCase();
+
     this.products.forEach( prod => {
 
-      console.log(prod);
+      if ( prod.categoria.indexOf(termino) >= 0 ||
+           prod.titulo.toLowerCase().indexOf(termino) >= 0) {
+        this.products_filtrado.push(prod);
+        console.log(prod);
+      }
 
     });
   }
@@ -35,14 +56,19 @@ export class ProductsService {
 
     this.carregando = true;
 
+    let promesa = new Promise((resolve, reject) => {
+
       this.http.get('https://pagina-web-angular.firebaseio.com/products_idx.json')
           .subscribe( res => {
 
-            // console.log(res.json());
-
             this.carregando = false;
             this.products = res.json();
+            resolve();
         });
+    });
+
+    return promesa;
+
   }
 
 }
