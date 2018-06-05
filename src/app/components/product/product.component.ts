@@ -12,15 +12,15 @@ export class ProductComponent {
 
   ano: number = new Date().getFullYear();
 
-  product:any = undefined;
-  cod:string = undefined;
+  product: any = undefined;
+  cod: string = undefined;
 
   constructor( private route: ActivatedRoute, private _ps: ProductsService ) {
 
     route.params.subscribe( parametros => {
 
       // console.log(parametros);
-      console.log(parametros['id']);
+      // console.log(parametros['id']);
 
       _ps.carregar_product(parametros['id'])
           .subscribe(res => {
