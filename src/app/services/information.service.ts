@@ -7,7 +7,7 @@ import { Http } from '@angular/http';
 export class InformationService {
 
   info: any = {};
-  carregado: boolean = false;
+  carregado:boolean = false;
   quem_somos:boolean = false;
   equipe: any[] = [];
 

@@ -24,6 +24,7 @@ export class ProductsService {
 
             console.log(res.json());
             this.carregando = false;
+            this.products = res.json();
         });
   }
 
