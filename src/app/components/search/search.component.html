@@ -24,7 +24,7 @@
       <p>Espere por favor...</p>
   </div>
 
-    <div *ngIf="_ps.products_filtrado.length > 0 && !carregando"
+    <div *ngIf="_ps.products_filtrado.length > 0 && !_ps.carregando"
     class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn">
 
       <a *ngFor="let product of _ps.products_filtrado"
