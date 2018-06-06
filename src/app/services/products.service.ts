@@ -6,7 +6,7 @@ export class ProductsService {
 
   products: any [] = [];
   products_filtrado: any [] = [];
-  carregando: boolean = true;
+  carregando: boolena = true;
 
   constructor( private http: Http ) {
 
